@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NFT MarketPlace</title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <!-- <img src="img/background.png" alt="" class="background__img" /> -->
+    <div class="container">
+      <div class="sidebar" onclick="toggleSidebar()">
+        <ul class="sidebar__header">
+          <li class="sidebar__item sidebar__item--dashboard">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="sidebar__item sidebar__item--marketplace">
+            <a href="#">Marketplace</a>
+          </li>
+          <li class="sidebar__item sidebar__item--messages"><a>Messages</a></li>
+        </ul>
+        <ul class="sidebar__menu">
+          <li class="sidebar__item sidebar__item--myCollection">
+            <a href="#">My Collection</a>
+          </li>
+          <li class="sidebar__item sidebar__item--wallet"><a>Wallet</a></li>
+          <li class="sidebar__item sidebar__item--history"><a>History</a></li>
+          <li class="sidebar__item sidebar__item--settings"><a>Settings</a></li>
+        </ul>
+        <div class="sidebar__item sidebar__item--Resources">
+          <a href="#">Resources</a>
+        </div>
+        <div class="sidebar__advertise">
+          <h2 class="advertise__header">Earn up to $100 worth of NFT</h2>
+          <button class="advertise__button">
+            <a href="#"
+              >Learn More
+              <img src="img/button__img.svg" alt="" class="button__img" />
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="mainArea">
+        <div class="header">
+          <div class="header__search">
+            <input
+              placeholder="Search items, collection, accounts"
+              class="header__input"
+              maxlength="20"
+            />
+          </div>
+
+          <div class="header__registration">
+            <img
+              src="img/Notification.svg"
+              alt=""
+              class="registration__notifications"
+            />
+            <img src="img/Avatar.png" alt="" class="registration__avatar" />
+            <a href="#" class="registration__enter">
+              <p>Doadesignz</p>
+            </a>
+          </div>
+        </div>
+        <div class="advertise">
+          <div class="advertise__items">
+            <h1 class="advertise__header">
+              Discover, Collect & Create your own NFT
+            </h1>
+            <p class="advertise__description">
+              Search items, collection, accounts
+            </p>
+            <div class="advertise__buttons">
+              <button class="button advertise__button">Discover Now</button>
+              <button class="button advertise__button">Create your NFT</button>
+            </div>
+          </div>
+          <img src="img/qwer__img.png" alt="" class="advertise__img" />
+        </div>
+        <div class="all-collections">
+          <div class="all-collections__header">
+            <div class="all-collections__items">
+              <h3 class="all-collections__label">All NFTS</h3>
+              <p class="all-collections__item">2,345,678 items</p>
+            </div>
+            <a href="#" class="all-collections__link">See all</a>
+          </div>
+          <ul class="itemsList">
+            <li class="itemsList__item itemsList__item--popular">
+              <a class="item__link item__link--popular" href="#">Popular</a>
+            </li>
+            <li class="itemsList__item itemsList__item--arts">
+              <a class="item__link item__link--arts" href="#">Arts</a>
+            </li>
+            <li class="itemsList__item itemsList__item--games">
+              <a class="item__link item__link--games" href="#">Games</a>
+            </li>
+            <li class="itemsList__item itemsList__item--music">
+              <a class="item__link item__link--music" href="#">Music</a>
+            </li>
+            <li class="itemsList__item itemsList__item--sport">
+              <a class="item__link item__link--sports" href="#">Sports</a>
+            </li>
+            <li class="itemsList__item itemsList__item--photography">
+              <a class="item__link item__link--photography" href="#"
+                >Photography</a
+              >
+            </li>
+          </ul>
+          <div class="all-collections__cards">
+            <div class="all-collections__card">
+              <img src="img/card__img1.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar1.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all-collections__card">
+              <img src="img/card__img2.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar2.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all-collections__card">
+              <img src="img/card__img3.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar3.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all-collections__card">
+              <img src="img/card__img1.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar1.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all-collections__card">
+              <img src="img/card__img2.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar2.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="all-collections__card">
+              <img src="img/card__img3.png" alt="" class="card__img" />
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="cardHeader__info">
+                    <h4 class="cardHeader__titile">The Future wave #23</h4>
+                    <p class="cardHeader__description">@spaceman</p>
+                  </div>
+                  <div class="avatar__area">
+                    <img
+                      src="img/card__avatar3.png"
+                      alt=""
+                      class="card__avatar"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="cardFooter__price">
+                    <p class="price__title">Current Bid</p>
+                    <p class="price__summ">0.24 BTC</p>
+                  </div>
+                  <div class="cardFooter__time">
+                    <p class="price__title time__title">Ending in</p>
+                    <p class="time__summ">12h 14m 16s</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="best-collections">
+          <div class="best-collections__header">
+            <div class="best-collections__items">
+              <h3 class="best-collections__label">Top NFTS</h3>
+              <p class="best-collections__item">564 Creators</p>
+            </div>
+            <a href="#" class="best-collections__link">See all</a>
+          </div>
+          <div class="table-block">
+            <table>
+              <caption></caption>
+              <thead>
+                <tr>
+                  <th scope="col" class="header__item header__item--collection">
+                    Collection
+                  </th>
+                  <th scope="col" class="header__item">Volume</th>
+                  <th scope="col" class="header__item">24h %</th>
+                  <th scope="col" class="header__item">Owners</th>
+                  <th scope="col" class="header__item">Items</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="best-collections">
+                      <img
+                        src="img/topNft__icon2.png"
+                        alt=""
+                        class="table__icon"
+                      />
+                      <div class="collection__description">
+                        <h5 class="description__label">Shadow Cube</h5>
+                        <p class="description__author">@cubicglass</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      -15%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <div class="best-collections">
+                      <img
+                        src="img/topNft__icon3.png"
+                        alt=""
+                        class="table__icon"
+                      />
+                      <div class="collection__description">
+                        <h5 class="description__label">Satoshi Mori</h5>
+                        <p class="description__author">@whoissatoshi</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      +25%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row">
+                    <div class="best-collections">
+                      <img
+                        src="img/topNft__icon4.png"
+                        alt=""
+                        class="table__icon"
+                      />
+                      <div class="collection__description">
+                        <h5 class="description__label">The Scars</h5>
+                        <p class="description__author">@Euphorian</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      -11%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="row">
+                    <div class="best-collections">
+                      <img
+                        src="img/topNft__icon1.png"
+                        alt=""
+                        class="table__icon"
+                      />
+                      <div class="collection__description">
+                        <h5 class="description__label">Cool Cyber Apes</h5>
+                        <p class="description__author">@cybasseman</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td data-label="Due Date">
+                    <p class="properties__item properties__item--volume">
+                      0.24 BTC
+                    </p>
+                  </td>
+                  <td data-label="Amount">
+                    <p class="properties__item properties__item--percent">
+                      +25%
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--owners">
+                      5.5k
+                    </p>
+                  </td>
+                  <td data-label="Period">
+                    <p class="properties__item properties__item--items">
+                      12.5k
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="hiddenSidebar">
+          <img
+            src="img/showMenu-icon.png"
+            alt=""
+            class="hiddenSidebar__toggle-btn"
+            onclick="showMenu()"
+          />
+          <img
+            src="img/showMenu-icon-return.png"
+            alt=""
+            class="hiddenSidebar__toggle-btn—close"
+            onclick="showMenu()"
+          />
+          <div class="hiddenSidebar__content">
+            <div class="hiddenSidebar__header">
+              <p class="hiddenSidebar__title">Your Balance</p>
+              <p class="hiddenSidebar__balance">$350,000.20</p>
+              <ul class="hiddenSidebar__offers">
+                <li class="offers__item offers__item--total">Total Offers</li>
+                <li class="offers__item offers__item--summ">USD 158,000</li>
+                <li class="offers__item offers__item--percent">(59.11%)</li>
+              </ul>
+              <div class="hiddenSidebar__tokenArea">
+                <p class="token">sdfgcghjhkb21687udwhjknscnkjkj....</p>
+                <a href="#" class="token__button"
+                  ><img src="img/tok.png" alt=""
+                /></a>
+              </div>
+              <button class="button hiddenSidebar__topUpButton">
+                <img src="img/topUp_icon.svg" alt="" class="topUpButton__img" />
+                <p>TopUp Balance</p>
+              </button>
+            </div>
+            <div class="hiddenSidebar__header topSellers">
+              <div class="topSellers__header">
+                <h3 class="topSellers__label">Top Sellers</h3>
+                <a href="#" class="all-collections__link topSellers__link"
+                  >See all</a
+                >
+              </div>
+              <ul class="topSellers__items">
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers1.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Sam Lee</p>
+                      <p class="sellers__co">@samlee</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers2.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Jane Donald</p>
+                      <p class="sellers__co">@janedoe</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers3.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Lois Lane</p>
+                      <p class="sellers__co">@supermanschic</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers4.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Barry Allen</p>
+                      <p class="sellers__co">@Flash</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers5.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Jenner Foster</p>
+                      <p class="sellers__co">@jennerfos</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+                <li class="topSellers__item">
+                  <div class="topSellers__personality">
+                    <img
+                      src="img/sellers1.png"
+                      alt=""
+                      class="sellers__avatar"
+                    />
+                    <div class="sellers__info">
+                      <p class="sellers__name">Sam Lee</p>
+                      <p class="sellers__co">@samlee</p>
+                    </div>
+                  </div>
+                  <button class="button sellers__button">Follow</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="adaptiveSidebar" onclick="showRightSidebar()">
+          <ul class="adaptiveSidebar__header">
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--dashboard">
+              <a href="#">Dashboard</a>
+            </li>
+            <li
+              class="adaptiveSidebar__item adaptiveSidebar__item--marketplace"
+            >
+              <a href="#">Marketplace</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--messages">
+              <a>Messages</a>
+            </li>
+          </ul>
+          <ul class="adaptiveSidebar__menu">
+            <li
+              class="adaptiveSidebar__item adaptiveSidebar__item--myCollection"
+            >
+              <a href="#">My Collection</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--wallet">
+              <a>Wallet</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--history">
+              <a>History</a>
+            </li>
+            <li class="adaptiveSidebar__item adaptiveSidebar__item--settings">
+              <a>Settings</a>
+            </li>
+          </ul>
+          <div
+            class="adaptiveSidebar__resources adaptiveSidebar__item sidebar__item--Resources"
+          >
+            <a href="#">Resources</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="jsmin/jquery/jquery.min.js"></script>
+    <script src="jsmin/slick/slick.min.js"></script>
+    <script src="jsmin/main.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
